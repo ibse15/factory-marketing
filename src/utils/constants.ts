@@ -1,0 +1,117 @@
+import { Module, NavItem } from '../types';
+
+export const navItems: NavItem[] = [
+  { id: 'dashboard', label: 'Dashboard', labelAr: 'الرئيسية', icon: 'home' },
+  { id: 'growth-engine', label: 'Growth', labelAr: 'النمو', icon: 'trending-up' },
+  { id: 'sales-pipeline', label: 'Sales', labelAr: 'المبيعات', icon: 'filter' },
+  { id: 'content-ops', label: 'Content', labelAr: 'المحتوى', icon: 'file-text' },
+  { id: 'analytics-hub', label: 'Analytics', labelAr: 'التحليلات', icon: 'bar-chart' },
+  { id: 'automation-center', label: 'Automation', labelAr: 'الأتمتة', icon: 'zap' },
+  { id: 'customer-insights', label: 'Customers', labelAr: 'العملاء', icon: 'users' },
+];
+
+export const modules: Module[] = [
+  {
+    id: 'growth-engine',
+    name: 'Growth Engine',
+    nameAr: 'محرك النمو',
+    description: 'Accelerate customer acquisition with AI-powered growth strategies.',
+    descriptionAr: 'تسريع اكتساب العملاء باستراتيجيات نمو مدعومة بالذكاء الاصطناعي.',
+    color: 'emerald',
+    icon: 'trending-up',
+    stats: [
+      { label: 'Active Campaigns', labelAr: 'الحملات النشطة', value: '24', change: '+3' },
+      { label: 'Conversion Rate', labelAr: 'معدل التحويل', value: '12.4%', change: '+2.1%' },
+      { label: 'Monthly Growth', labelAr: 'النمو الشهري', value: '34%', change: '+8%' },
+    ],
+    features: ['A/B Testing', 'Predictive Analytics', 'Customer Journey Mapping', 'Real-time Optimization', 'Multi-channel Orchestration'],
+    featuresAr: ['اختبار A/B آلي', 'التحليلات التنبؤية', 'تخطيط رحلة العميل', 'التحسين في الوقت الفعلي', 'تنسيق متعدد القنوات'],
+  },
+  {
+    id: 'sales-pipeline',
+    name: 'Sales Pipeline',
+    nameAr: 'خط أنابيب المبيعات',
+    description: 'Streamline your sales process with intelligent lead scoring and pipeline management.',
+    descriptionAr: 'تبسيط عملية المبيعات مع تقييم العملاء المحتملين الذكي.',
+    color: 'blue',
+    icon: 'filter',
+    stats: [
+      { label: 'Open Deals', labelAr: 'الصفقات المفتوحة', value: '156', change: '+12' },
+      { label: 'Pipeline Value', labelAr: 'قيمة خط الأنابيب', value: '$2.4M', change: '+$340K' },
+      { label: 'Win Rate', labelAr: 'معدل الفوز', value: '68%', change: '+5%' },
+    ],
+    features: ['AI Lead Scoring', 'Deal Velocity Tracking', 'Forecasting Models', 'Automated Follow-ups', 'Revenue Intelligence'],
+    featuresAr: ['تقييم العملاء بالذكاء الاصطناعي', 'تتبع سرعة الصفقات', 'نماذج التنبؤ', 'المتابعات الآلية', 'ذكاء الإيرادات'],
+  },
+  {
+    id: 'content-ops',
+    name: 'Content Operations',
+    nameAr: 'عمليات المحتوى',
+    description: 'Create, manage, and optimize content at scale with AI assistance.',
+    descriptionAr: 'إنشاء وإدارة وتحسين المحتوى بمساعدة الذكاء الاصطناعي.',
+    color: 'violet',
+    icon: 'file-text',
+    stats: [
+      { label: 'Content Pieces', labelAr: 'المحتوى', value: '892', change: '+45' },
+      { label: 'Engagement', labelAr: 'التفاعل', value: '4.2K', change: '+18%' },
+      { label: 'Publish Rate', labelAr: 'معدل النشر', value: '94%', change: '+3%' },
+    ],
+    features: ['AI Content Generation', 'Editorial Calendar', 'SEO Optimization', 'Asset Management', 'Performance Analytics'],
+    featuresAr: ['إنشاء المحتوى بالذكاء الاصطناعي', 'التقويم التحريري', 'تحسين SEO', 'إدارة الأصول', 'تحليلات الأداء'],
+  },
+  {
+    id: 'analytics-hub',
+    name: 'Analytics Hub',
+    nameAr: 'مركز التحليلات',
+    description: 'Unified analytics dashboard bringing all your marketing data together.',
+    descriptionAr: 'لوحة تحليلات موحدة تجمع كل بياناتك التسويقية.',
+    color: 'amber',
+    icon: 'bar-chart',
+    stats: [
+      { label: 'Data Sources', labelAr: 'مصادر البيانات', value: '18', change: '+2' },
+      { label: 'Reports', labelAr: 'التقارير', value: '342', change: '+28' },
+      { label: 'Insights', labelAr: 'الرؤى', value: '1.2K', change: '+156' },
+    ],
+    features: ['Real-time Dashboards', 'Custom Reports', 'Data Integration', 'Predictive Models', 'Alert System'],
+    featuresAr: ['لوحات في الوقت الفعلي', 'تقارير مخصصة', 'تكامل البيانات', 'نماذج تنبؤية', 'نظام التنبيهات'],
+  },
+  {
+    id: 'automation-center',
+    name: 'Automation Center',
+    nameAr: 'مركز الأتمتة',
+    description: 'Build powerful marketing automations without code using our visual workflow builder.',
+    descriptionAr: 'بناء أتمتات تسويقية قوية بدون كود باستخدام محرر العمليات.',
+    color: 'rose',
+    icon: 'zap',
+    stats: [
+      { label: 'Workflows', labelAr: 'سير العمل', value: '67', change: '+8' },
+      { label: 'Tasks Run', labelAr: 'المهام المنفذة', value: '12.4K', change: '+2.1K' },
+      { label: 'Time Saved', labelAr: 'الوقت الموفر', value: '340h', change: '+52h' },
+    ],
+    features: ['Visual Builder', 'Trigger System', 'Conditional Logic', 'API Connectors', 'Error Handling'],
+    featuresAr: ['محرر بصري', 'نظام المحفزات', 'منطق شرطي', 'موصلات API', 'معالجة الأخطاء'],
+  },
+  {
+    id: 'customer-insights',
+    name: 'Customer Insights',
+    nameAr: 'رؤى العملاء',
+    description: 'Deep dive into customer behavior with AI-powered insights and segmentation.',
+    descriptionAr: 'تعمق في سلوك العملاء مع رؤى وتقسيم مدعوم بالذكاء الاصطناعي.',
+    color: 'cyan',
+    icon: 'users',
+    stats: [
+      { label: 'Profiles', labelAr: 'الملفات', value: '45.2K', change: '+3.2K' },
+      { label: 'Segments', labelAr: 'القطاعات', value: '28', change: '+4' },
+      { label: 'Accuracy', labelAr: 'الدقة', value: '94%', change: '+2%' },
+    ],
+    features: ['Customer 360', 'Behavior Tracking', 'Segmentation', 'Churn Prediction', 'Lifetime Value'],
+    featuresAr: ['عميل 360', 'تتبع السلوك', 'التقسيم', 'التنبؤ بالتسرب', 'قيمة العمر'],
+  },
+];
+
+export const dashboardStats = [
+  { label: 'Active Modules', labelAr: 'الوحدات النشطة', value: '6', icon: 'layers' },
+  { label: 'Campaigns', labelAr: 'الحملات', value: '24', icon: 'campaign' },
+  { label: 'Performance', labelAr: 'الأداء', value: '94%', icon: 'check-circle' },
+  { label: 'Last Updated', labelAr: 'آخر تحديث', value: '2 min ago', icon: 'clock' },
+];
