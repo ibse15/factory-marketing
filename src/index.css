@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Tajawal', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .module-card {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .module-card:hover {
+    @apply -translate-y-2 shadow-xl;
+  }
+  
+  .nav-item {
+    @apply transition-all duration-200 ease-out;
+  }
+  
+  .nav-item:hover {
+    @apply bg-white/10;
+  }
+  
+  .nav-item.active {
+    @apply bg-white/15 text-white;
+  }
+  
+  .stat-card {
+    @apply opacity-0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .page-transition {
+    animation: slideIn 0.4s ease forwards;
+  }
+  
+  .feature-item {
+    @apply transition-all duration-200 ease-out;
+  }
+  
+  .feature-item:hover {
+    @apply scale-[1.02] bg-slate-50;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+.stat-card:nth-child(4) { animation-delay: 0.4s; }
